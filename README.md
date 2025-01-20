@@ -1,2 +1,2 @@
 John Rathgeber's Personal Website  
-Domain: TBD  
+Domain: johnrathgeber.com
