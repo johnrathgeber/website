@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -35,12 +36,12 @@ export default function Home() {
           {/* Text Section */}
           <div className="md:w-1/2 text-center md:text-left px-4 space-y-4 md:pr-8">
             <p className="text-lg mb-4">
-              Hi! I'm John, a sophomore at Brown University, originally from Madison, Wisconsin, pursuing a dual concentration in Mathematics-Computer Science and Music.
-              I'm passionate about how logic, creativity, and innovation come together to solve problems in Computer Science.{/*, from systems that power everyday technologies to models that can learn and adapt to achieve optimal performance.*/}
+              Hi! I&apos;m John, a sophomore at Brown University, originally from Madison, Wisconsin, pursuing a dual concentration in Mathematics-Computer Science and Music.
+              I&apos;m passionate about how logic, creativity, and innovation come together to solve problems in Computer Science.{/*, from systems that power everyday technologies to models that can learn and adapt to achieve optimal performance.*/}
             </p>
             <p className="text-lg">
               Outside of classes, I do <a href="https://codeforces.com/profile/hidabeast" target="_blank" rel="noopener noreferrer" className="underline">Competitive Programming</a> to hone my critical thinking and coding skills.
-              When I'm not coding, you can find me at the piano practicing my repertoire or composing my own music.
+              When I&apos;m not coding, you can find me at the piano practicing my repertoire or composing my own music.
               My favorite composers are Chopin, Mozart, Beethoven, Bach, and Joplin.
               I also enjoy going to the gym, playing tennis, and reading in my free time.
             </p>
@@ -49,38 +50,48 @@ export default function Home() {
               With aspirations of becoming a software engineer, I am very excited to further develop my skills this summer during my upcoming internship at Electronic Theatre Controls. 
             </p>
             <p className="text-lg">
-              If you'd like to connect, collaborate, or chat about exciting opportunities, please don't hesitate to <Link href="#resume-contact" className="underline">reach out</Link>.
+              If you&apos;d like to connect, collaborate, or chat about exciting opportunities, please don&apos;t hesitate to <Link href="#resume-contact" className="underline">reach out</Link>.
               Thank you for visiting my website!
             </p>
           </div>
           {/* Image Section */}
           <div className="md:w-1/2 flex flex-col items-center space-y-8 md:justify-end px-4">
             <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
-              <img 
+              <Image 
                 src="/orwig.png" 
                 alt="me in front of Orwig" 
+                width={320}
+                height={320}
                 className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
               />
-              <img 
+              <Image 
                 src="/headshot.jpg"
                 alt="headshot" 
+                width={320}
+                height={320}
                 className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
               />
             </div>
-            <img 
+            <Image 
               src="/piano.png"
               alt="me playing piano"
+              width={320}
+              height={320}
               className="object-cover shadow-lg border border-gray-300 rounded-3xl"
             />
             <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
-              <img 
+              <Image 
                 src="/orwig.png" 
-                alt="Picture of Me" 
+                alt="Picture of Me"
+                width={320}
+                height={320} 
                 className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
               />
-              <img 
+              <Image 
                 src="/tennis.png" 
-                alt="Picture of Me" 
+                alt="Picture of Me"
+                width={320}
+                height={320} 
                 className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
               />
             </div>
@@ -117,9 +128,11 @@ export default function Home() {
               key={index} 
               className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-xl transform hover:scale-105 transition-transform duration-300"
             >
-              <img 
+              <Image  
                 src={project.image} 
-                alt={project.title} 
+                alt={project.title}
+                width={320}
+                height={320} 
                 className="w-full h-80 object-contain"
               />
               <div className="p-4">
@@ -140,7 +153,7 @@ export default function Home() {
             <p className="text-white text-lg mb-2">Feel free to reach out!</p>
             <ul className="text-white text-lg">
               <li>
-                <strong>Email:</strong> <a href="mailto:johndrathgeber@gmail.com" className="underline">johndrathgber@gmail.com</a>
+                <strong>Email:</strong> <a href="mailto:johndrathgeber@gmail.com" className="underline">johndrathgeber@gmail.com</a>
               </li>
               <li>
                 <strong>LinkedIn:</strong>{" "}
