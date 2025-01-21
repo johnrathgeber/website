@@ -58,66 +58,38 @@ export default function Home() {
           {/* Image Section */}
           <div className="md:w-1/2 flex flex-col items-center space-y-8 md:justify-end px-4">
             <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
-              {/* <Image 
-                src="/orwig.png" 
-                alt="me in front of Orwig" 
-                width={1}
-                height={1}
-                className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
-              /> */}
               <img 
                 src="/orwig.png" 
                 alt="me in front of Orwig" 
                 className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
               />
-              {/* <Image 
-                src="/headshot.jpg"
-                alt="headshot" 
-                width={1}
-                height={1}
-                className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
-              /> */}
               <img 
                 src="/headshot.jpg"
                 alt="headshot" 
                 className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
               />
             </div>
-            {/* <Image 
-              src="/piano.png"
-              alt="me playing piano"
-              width={1}
-              height={1}
-              className="object-cover shadow-lg border border-gray-300 rounded-3xl"
-            /> */}
-            <img 
-              src="/piano.png"
-              alt="me playing piano"
-              className="object-cover shadow-lg border border-gray-300 rounded-3xl"
-            />
             <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
-              {/* <Image 
-                src="/orwig.png" 
-                alt="Picture of Me"
-                width={1}
-                height={1} 
-                className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
-              /> */}
               <img 
-                src="/orwig.png" 
-                alt="Picture of Me"
+                src="/piano.png"
+                alt="me playing piano"
+                className="w-auto h-48 object-cover shadow-lg border border-gray-300 rounded-3xl"
+              />
+              <img 
+                src="/baby_piano.jpg"
+                alt="little me winning piano award"
+                className="w-auto h-48 object-cover shadow-lg border border-gray-300 rounded-3xl"
+              />
+            </div>
+            <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+              <img 
+                src="/new_york.jpg" 
+                alt="me doing a funny pose"
                 className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
               />
-              {/* <Image 
-                src="/tennis.png" 
-                alt="Picture of Me"
-                width={1}
-                height={1} 
-                className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
-              /> */}
               <img 
                 src="/tennis.png" 
-                alt="Picture of Me"
+                alt="me playing tennis"
                 className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
               />
             </div>
@@ -154,13 +126,6 @@ export default function Home() {
               key={index} 
               className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-xl transform hover:scale-105 transition-transform duration-300"
             >
-              {/* <Image  
-                src={project.image} 
-                alt={project.title}
-                width={1}
-                height={1} 
-                className="w-full h-80 object-contain"
-              /> */}
               <img  
                 src={project.image} 
                 alt={project.title}
