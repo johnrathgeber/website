@@ -47,10 +47,11 @@ export default function Home() {
             </p>
             <p className="text-lg">
               I am most proficient in C++ and Python, but I also have experience with languages like Java, Javascript, and SQL.
-              With aspirations of becoming a software engineer, I am very excited to further develop my skills this summer during my upcoming internship at Electronic Theatre Controls. 
+              From my previous internships, I have gained valuable skills in problem-solving, working as a team, and project organization which I am excited to apply during my upcoming internship as a software engineer at Electronic Theatre Controls.
+              As an aspiring software engineer, I look forward to further honing my skills and contributing to impactful projects this summer.
             </p>
             <p className="text-lg">
-              If you&apos;d like to connect, collaborate, or chat about exciting opportunities, please don&apos;t hesitate to <Link href="#resume-contact" className="underline">reach out</Link>.
+              If you&apos;d like to connect, collaborate, or chat, please don&apos;t hesitate to <Link href="#resume-contact" className="underline">reach out</Link>.
               Thank you for visiting my website!
             </p>
           </div>
