@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -57,41 +57,66 @@ export default function Home() {
           {/* Image Section */}
           <div className="md:w-1/2 flex flex-col items-center space-y-8 md:justify-end px-4">
             <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
-              <Image 
+              {/* <Image 
                 src="/orwig.png" 
                 alt="me in front of Orwig" 
-                width={320}
-                height={320}
+                width={1}
+                height={1}
+                className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
+              /> */}
+              <img 
+                src="/orwig.png" 
+                alt="me in front of Orwig" 
                 className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
               />
-              <Image 
+              {/* <Image 
                 src="/headshot.jpg"
                 alt="headshot" 
-                width={320}
-                height={320}
+                width={1}
+                height={1}
+                className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
+              /> */}
+              <img 
+                src="/headshot.jpg"
+                alt="headshot" 
                 className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
               />
             </div>
-            <Image 
+            {/* <Image 
               src="/piano.png"
               alt="me playing piano"
-              width={320}
-              height={320}
+              width={1}
+              height={1}
+              className="object-cover shadow-lg border border-gray-300 rounded-3xl"
+            /> */}
+            <img 
+              src="/piano.png"
+              alt="me playing piano"
               className="object-cover shadow-lg border border-gray-300 rounded-3xl"
             />
             <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
-              <Image 
+              {/* <Image 
                 src="/orwig.png" 
                 alt="Picture of Me"
-                width={320}
-                height={320} 
+                width={1}
+                height={1} 
+                className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
+              /> */}
+              <img 
+                src="/orwig.png" 
+                alt="Picture of Me"
                 className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
               />
-              <Image 
+              {/* <Image 
                 src="/tennis.png" 
                 alt="Picture of Me"
-                width={320}
-                height={320} 
+                width={1}
+                height={1} 
+                className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
+              /> */}
+              <img 
+                src="/tennis.png" 
+                alt="Picture of Me"
                 className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
               />
             </div>
@@ -128,11 +153,16 @@ export default function Home() {
               key={index} 
               className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-xl transform hover:scale-105 transition-transform duration-300"
             >
-              <Image  
+              {/* <Image  
                 src={project.image} 
                 alt={project.title}
-                width={320}
-                height={320} 
+                width={1}
+                height={1} 
+                className="w-full h-80 object-contain"
+              /> */}
+              <img  
+                src={project.image} 
+                alt={project.title}
                 className="w-full h-80 object-contain"
               />
               <div className="p-4">
@@ -182,11 +212,14 @@ export default function Home() {
                 Resume
               </a>
             </h2>
-            <iframe
-              src="/Resume - John Rathgeber.pdf"
-              className="w-full h-[800px] border border-gray-300 shadow-lg"
-              title="Resume"
-            ></iframe>
+            <div className="w-full h-[753px] border border-gray-300 shadow-lg overflow-hidden">
+              <embed 
+                src="/Resume - John Rathgeber.pdf#toolbar=0"
+                className="w-full h-full"
+                type="application/pdf"
+                title="Resume"
+              />
+            </div>
           </div>
         </div>
       </section>
