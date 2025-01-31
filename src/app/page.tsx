@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center min-h-screen px-4">
       {/* Navbar */}
-      <nav className="bg-gray-800 bg-opacity-75 text-white py-4 fixed top-0 left-0 w-full z-10">
+      <nav className="bg-cyan-800 dark:bg-gray-800 bg-opacity-75 text-white py-4 fixed top-0 left-0 w-full z-10">
         <div className="max-w-screen-xl mx-auto flex justify-between items-center px-6">
           <div className="text-2xl font-bold">John Rathgeber</div>
           <div className="space-x-6">
@@ -24,7 +24,7 @@ export default function Home() {
 
       {/* Header Section with Name */}
       <header className="text-center py-16">
-        <h1 className="text-8xl text-white font-[Bad+Script]">
+        <h1 className="text-8xl text-[var(--foreground)] font-[Bad+Script]">
           John Rathgeber
         </h1>
       </header>
@@ -145,9 +145,9 @@ export default function Home() {
         <div className="flex justify-between items-start">
           {/* Contact Information Section */}
           <div className="flex-1 p-4">
-            <h2 className="text-2xl font-semibold text-white mb-4">Contact</h2>
-            <p className="text-white text-lg mb-2">Feel free to reach out!</p>
-            <ul className="text-white text-lg">
+            <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">Contact</h2>
+            <p className="text-[var(--foreground)] text-lg mb-2">Feel free to reach out!</p>
+            <ul className="text-[var(--foreground)] text-lg">
               <li>
                 <strong>Email:</strong> <a href="mailto:johndrathgeber@gmail.com" className="underline">johndrathgeber@gmail.com</a>
               </li>
@@ -173,7 +173,7 @@ export default function Home() {
                 href="/Resume - John Rathgeber.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:underline"
+                className="text-[var(--foreground)] hover:underline"
               >
                 Resume
               </a>
