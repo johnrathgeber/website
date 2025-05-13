@@ -36,7 +36,7 @@ export default function Home() {
           {/* Text Section */}
           <div className="md:w-1/2 text-center md:text-left px-4 space-y-4 md:pr-8">
             <p className="text-lg mb-4">
-              Hi! I&apos;m John, a sophomore at Brown University, originally from Madison, Wisconsin, pursuing a dual concentration in Mathematics-Computer Science and Music.
+              Hi! I&apos;m John, a rising junior at Brown University, originally from Madison, Wisconsin, pursuing a double concentration in Mathematics-Computer Science and Music.
               I&apos;m passionate about how logic, creativity, and innovation come together to solve problems in Computer Science.{/*, from systems that power everyday technologies to models that can learn and adapt to achieve optimal performance.*/}
             </p>
             <p className="text-lg">
@@ -46,8 +46,8 @@ export default function Home() {
               I also enjoy going to the gym, playing tennis, and reading in my free time.
             </p>
             <p className="text-lg">
-              I am most proficient in C++ and Python, but I also have experience with languages like Java, Javascript, and SQL.
-              From my previous internships, I have gained valuable skills in problem-solving, working as a team, and project organization which I am excited to apply during my upcoming internship as a software engineer at Electronic Theatre Controls.
+              I am most skilled in C++ and Python, but I also have experience with languages like Java, Javascript, and SQL.
+              From my previous internships, I have gained valuable skills in problem-solving, working as a team, and project organization which I am currently applying at my internship as a software engineer at Electronic Theatre Controls.
               As an aspiring software engineer, I look forward to further honing my skills and contributing to impactful projects this summer.
             </p>
             <p className="text-lg">
@@ -117,7 +117,7 @@ export default function Home() {
             },
             {
               title: "Wisconsin DOT Position Estimation",
-              description: (<>Developed an algorithm that recognizes and maps street signs from a dataset of over 3 million images. This algorithm uses Computer Vision techniques such as depth maps from DepthAnythingV2 and linear algebra techniques such as rotation matrices for 3D spatial rotation.
+              description: (<>Developed an algorithm that recognizes and maps street signs from a dataset of over 3 million images. This algorithm uses advanced computer vision methods such as monocular depth estimation and YOLO-based sign detection to compute real-world distances using exponential depth fitting and trigonometric projection. <strong><a href="https://github.com/hidabeast/WisDOT_Traffic_Sign_Location" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">See the details</a></strong>.
               </>),
               image: "/wisdot_card_cover.png",
             },
