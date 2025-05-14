@@ -41,7 +41,7 @@ export default function Home() {
             </p>
             <p className="text-lg">
               Outside of classes, I do <a href="https://codeforces.com/profile/hidabeast" target="_blank" rel="noopener noreferrer" className="underline">Competitive Programming</a> to hone my critical thinking and coding skills.
-              When I&apos;m not coding, you can find me at the piano practicing my repertoire or composing my own music.
+              When I&apos;m not coding, you can find me at the piano practicing my repertoire or <a href="https://musescore.com/user/76422514" target="_blank" rel="noopener noreferrer" className="underline">composing my own music</a>.
               My favorite composers are Chopin, Mozart, Beethoven, Bach, and Joplin.
               I also enjoy going to the gym, playing tennis, and reading in my free time.
             </p>
