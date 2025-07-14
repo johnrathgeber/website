@@ -40,13 +40,12 @@ export default function Home() {
               I&apos;m passionate about how logic, creativity, and innovation come together to solve problems in Computer Science.{/*, from systems that power everyday technologies to models that can learn and adapt to achieve optimal performance.*/}
             </p>
             <p className="text-lg">
-              Outside of classes, I do <a href="https://codeforces.com/profile/hidabeast" target="_blank" rel="noopener noreferrer" className="underline">Competitive Programming</a> to hone my critical thinking and coding skills.
               When I&apos;m not coding, you can find me at the piano practicing my repertoire or <a href="https://musescore.com/user/76422514" target="_blank" rel="noopener noreferrer" className="underline">composing my own music</a>.
               My favorite composers are Chopin, Mozart, Beethoven, Bach, and Joplin.
-              I also enjoy going to the gym, playing tennis, and reading in my free time.
+              I also enjoy going to the gym, playing tennis or golf, reading, and <a href="https://chess.com/member/hidabeast/stats/puzzles" target="_blank" rel="noopener noreferrer" className="underline">doing chess puzzles</a>.
             </p>
             <p className="text-lg">
-              I am most skilled in C++ and Python, but I also have experience with languages like Java, Javascript, and SQL.
+              My primary languages are C++ and Python, but I also have extensive experience with languages like Javascript, Typescript, Java, and SQL.
               From my previous internships, I have gained valuable skills in problem-solving, working as a team, and project organization which I am currently applying at my internship as a software engineer at Electronic Theatre Controls.
               As an aspiring software engineer, I look forward to further honing my skills and contributing to impactful projects this summer.
             </p>
@@ -103,6 +102,12 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto max-w-screen-lg px-4">
           {[
             {
+              title: "Brown Opinion Project Website",
+              description: (<>Collaborated with a small team of Full Stack at Brown members to create a website for the Brown Opinion Project at Brown. Used Next.JS, Typescript, and Tailwind to implement the Question Submissions page and create a cross-tab data visualization tool (pictured above). <strong><a href="https://www.brownopinionproject.org/" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">View the full website</a></strong>.
+              </>),
+              image: "/bop.png",
+            },
+            {
               title: "Tumor Detection",
               description: (
               <>Led a team in developing a Convolutional Neural Network (CNN) to detect brain tumors in MRI scans, achieving a 90% accuracy rate on publicly available Kaggle datasets. Directed all stages of the project, including data preprocessing, model design, and performance evaluation, utilizing Python along with deep learning frameworks such as Keras and TensorFlow. <strong><a href="/Final Report.pdf" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">Read the full report</a></strong>.
@@ -111,7 +116,7 @@ export default function Home() {
             },
             {
               title: "Causality and Mind Lab Website",
-              description: (<>Collaborated with a small team of Full Stack at Brown members to create a website for the Causality and Mind Lab at Brown. Used Next.JS, Typescript, and Tailwind. <strong><a href="https://causality-mind-lab.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">View the full website</a></strong>.
+              description: (<>Collaborated with a small team of Full Stack at Brown members to create a website for the Causality and Mind Lab at Brown. Used Next.js, TypeScript, and Tailwind to build the homepage and integrate Firebase for backend functionality. <strong><a href="https://causality-mind-lab.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">View the full website</a></strong>.
               </>),
               image: "/causality_and_mind_card_cover.png",
             },
