@@ -175,7 +175,7 @@ export default function Home() {
           <div className="flex-1 p-4">
             <h2 className="text-2xl font-semibold text-white mb-4">
               <a
-                href="/Resume - John Rathgeber.pdf"
+                href="/John_Rathgeber_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[var(--foreground)] hover:underline"
@@ -185,7 +185,7 @@ export default function Home() {
             </h2>
             <div className="w-full h-[753px] border border-gray-300 shadow-lg overflow-hidden">
               <embed 
-                src="/Resume - John Rathgeber.pdf#toolbar=0"
+                src="/John_Rathgeber_Resume.pdf#toolbar=0"
                 className="w-full h-full"
                 type="application/pdf"
                 title="Resume"
