@@ -126,6 +126,12 @@ export default function Home() {
               </>),
               image: "/wisdot_card_cover.png",
             },
+            {
+              title: "Caching I/O",
+              description: (<>Built a custom C-based I/O caching library to wrap read, write, and seek operations, reducing system call frequency and cutting disk access latency by 100x–1000x through buffered memory caching. Handled overlapping reads/writes, eviction via LRU, and correctness edge cases to closely match stdio behavior.
+              </>),
+              image: "/caching_io.png",
+            },
           ].map((project, index) => (
             <div 
               key={index} 
