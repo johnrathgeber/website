@@ -40,9 +40,10 @@ export default function Home() {
               I&apos;m passionate about how logic, creativity, and innovation come together to solve problems in Computer Science.{/*, from systems that power everyday technologies to models that can learn and adapt to achieve optimal performance.*/}
             </p>
             <p className="text-lg">
-              When I&apos;m not coding, you can find me at the piano practicing my repertoire or <a href="https://musescore.com/user/76422514" target="_blank" rel="noopener noreferrer" className="underline">composing my own music</a>.
-              My favorite composers are Chopin, Mozart, Beethoven, Bach, and Joplin.
-              I also enjoy going to the gym, playing tennis or golf, reading, and <a href="https://chess.com/member/hidabeast/stats/puzzles" target="_blank" rel="noopener noreferrer" className="underline">doing chess puzzles</a>.
+              When I&apos;m not coding, I&apos;m usually at the piano practicing repertoire or <a href="https://musescore.com/user/76422514" target="_blank" rel="noopener noreferrer" className="underline">composing my own music</a>.
+              This summer, I’m also accompanying a voice recital and playing keyboard in the Sauk Prairie Theatre Guild&apos;s production of <em>The SpongeBob Musical</em>.
+              I’m a big fan of Chopin, Mozart, Beethoven, Bach, and Joplin.
+              Outside of music and tech, I enjoy going to the gym, playing tennis or golf, and reading.
             </p>
             <p className="text-lg">
               My primary languages are C++ and Python, but I also have extensive experience with languages like Javascript, Typescript, Java, and SQL.
