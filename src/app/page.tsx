@@ -37,18 +37,18 @@ export default function Home() {
           <div className="md:w-1/2 text-center md:text-left px-4 space-y-4 md:pr-8">
             <p className="text-lg mb-4">
               Hi! I&apos;m John, a rising junior at Brown University, originally from Madison, Wisconsin, pursuing a double concentration in Mathematics-Computer Science and Music.
-              I&apos;m passionate about how logic, creativity, and innovation come together to solve problems in Computer Science.{/*, from systems that power everyday technologies to models that can learn and adapt to achieve optimal performance.*/}
-            </p>
-            <p className="text-lg">
-              When I&apos;m not coding, I&apos;m usually at the piano practicing repertoire or <a href="https://musescore.com/user/76422514" target="_blank" rel="noopener noreferrer" className="underline">composing my own music</a>.
-              This summer, I’m also accompanying a voice recital and playing keyboard in the Sauk Prairie Theatre Guild&apos;s production of <em>The SpongeBob Musical</em>.
-              I’m a big fan of Chopin, Mozart, Beethoven, Bach, and Joplin.
-              Outside of music and tech, I enjoy going to the gym, playing tennis or golf, and reading.
+              I&apos;m passionate about how logic, creativity, and innovation come together to solve problems in Computer Science.
             </p>
             <p className="text-lg">
               My primary languages are C++ and Python, but I also have extensive experience with languages like Javascript, Typescript, Java, and SQL.
-              From my previous internships, I have gained valuable skills in problem-solving, working as a team, and project organization which I am currently applying at my internship as a software engineer at Electronic Theatre Controls.
-              As an aspiring software engineer, I look forward to further honing my skills and contributing to impactful projects this summer.
+              I specialize in algorithmic problem solving, math-heavy systems, and backend engineering.
+              This summer, I got hands-on experience building backend systems at Electronic Theatre Controls, and I’m currently looking for Summer 2026 software engineering internships where I can continue building impactful projects and growing as an engineer.
+            </p>
+            <p className="text-lg">
+              When I&apos;m not coding, I&apos;m usually at the piano practicing repertoire or <a href="https://musescore.com/user/76422514" target="_blank" rel="noopener noreferrer" className="underline">composing my own music</a>.
+              This summer, I also accompanied for a voice recital and played keyboard in the Sauk Prairie Theatre Guild&apos;s production of <em>The SpongeBob Musical</em>.
+              My favorite composers are Chopin, Mozart, Beethoven, Bach, and Joplin.
+              Outside of music and tech, I enjoy going to the gym, playing tennis or golf, and reading.
             </p>
             <p className="text-lg">
               If you&apos;d like to connect, collaborate, or chat, please don&apos;t hesitate to <Link href="#resume-contact" className="underline">reach out</Link>.
@@ -171,8 +171,8 @@ export default function Home() {
               </li>
               <li>
                 <strong>GitHub:</strong>{" "}
-                <a href="https://github.com/hidabeast" target="_blank" rel="noopener noreferrer" className="underline">
-                  github.com/hidabeast
+                <a href="https://github.com/johnrathgeber" target="_blank" rel="noopener noreferrer" className="underline">
+                  github.com/johnrathgeber
                 </a>
               </li>
             </ul>
