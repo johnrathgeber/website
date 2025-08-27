@@ -64,7 +64,7 @@ export default function Home() {
                 className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
               />
               <img 
-                src="/headshot.jpg"
+                src="/Headshot.jpg"
                 alt="headshot" 
                 className="w-80 h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
               />
