@@ -212,15 +212,19 @@ export default function Home() {
             </h2>
             <div className="w-full">
               <div className="hidden md:block flex justify-center">
-                <div className="border border-gray-300 shadow-lg" style={{width: 'fit-content', maxWidth: '100%'}}>
+                <div className="border border-gray-300 shadow-lg overflow-hidden" style={{width: 'fit-content', maxWidth: '100%'}}>
                   <iframe 
                     src="/John_Rathgeber_Resume.pdf#toolbar=0&view=FitH"
-                    className="border-0 block"
+                    className="block"
                     title="Resume"
                     style={{
                       width: '600px',
                       height: '780px',
-                      maxWidth: '100%'
+                      maxWidth: '100%',
+                      border: 'none',
+                      outline: 'none',
+                      margin: '0',
+                      padding: '0'
                     }}
                   />
                 </div>
