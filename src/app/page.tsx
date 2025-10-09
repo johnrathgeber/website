@@ -210,15 +210,23 @@ export default function Home() {
                 </svg>
               </a>
             </h2>
-            <div className="w-full h-[753px] border border-gray-300 shadow-lg overflow-hidden">
-              <embed 
-                src="/John_Rathgeber_Resume.pdf#toolbar=0"
-                className="w-full h-full"
-                type="application/pdf"
-                title="Resume"
-              />
-              <div className="p-4 text-center text-gray-500">
-                <p>If the PDF doesn&apos;t load above, <a href="/John_Rathgeber_Resume.pdf" target="_blank" rel="noopener noreferrer" className="underline">click here to download it</a>.</p>
+            <div className="w-full">
+              <div className="hidden md:block flex justify-center">
+                <div className="border border-gray-300 shadow-lg" style={{width: 'fit-content', maxWidth: '100%'}}>
+                  <iframe 
+                    src="/John_Rathgeber_Resume.pdf#toolbar=0&view=FitH"
+                    className="border-0 block"
+                    title="Resume"
+                    style={{
+                      width: '600px',
+                      height: '780px',
+                      maxWidth: '100%'
+                    }}
+                  />
+                </div>
+              </div>
+              <div className="p-4 text-center text-gray-500 md:hidden">
+                <p>Resume preview optimized for desktop. <a href="/John_Rathgeber_Resume.pdf" target="_blank" rel="noopener noreferrer" className="underline">Open or download the PDF</a>.</p>
               </div>
             </div>
           </div>
