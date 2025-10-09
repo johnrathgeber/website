@@ -218,7 +218,7 @@ export default function Home() {
                 title="Resume"
               />
               <div className="p-4 text-center text-gray-500">
-                <p>If the PDF doesn't load above, <a href="/John_Rathgeber_Resume.pdf" target="_blank" rel="noopener noreferrer" className="underline">click here to download it</a>.</p>
+                <p>If the PDF doesn&apos;t load above, <a href="/John_Rathgeber_Resume.pdf" target="_blank" rel="noopener noreferrer" className="underline">click here to download it</a>.</p>
               </div>
             </div>
           </div>
