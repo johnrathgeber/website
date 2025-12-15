@@ -22,7 +22,7 @@ export default function Home() {
         <h1 className="text-5xl sm:text-6xl md:text-8xl text-[var(--foreground)]" style={{ fontFamily: 'var(--font-bad-script)' }}>
           John Rathgeber
         </h1>
-      </header>
+      </header> 
 
       {/* About Me Section */}
       <section id="about-me" className="w-full py-16 border-t border-gray-300 scroll-mt-24">
