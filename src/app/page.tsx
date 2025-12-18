@@ -110,6 +110,28 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto max-w-screen-lg px-4">
           {[
             {
+              title: "IMO Problem Formalization",
+              description: (<>Proved and formalized IMO 1998 Problem 3 using the Lean 4 theorem prover.{' '}
+              This project combines advanced mathematics (number theory) and functional programming
+              to create a proof of a beautiful fact in mathematics.{' '}
+              <strong>
+                <a href="https://github.com/johnrathgeber/imo-problem-formalization" target="_blank" 
+                rel="noopener noreferrer" className="text-black hover:underline">
+                  See the code here
+                </a>
+              </strong>.{' '}<br />
+              This project was also merged into the official Compfiles repository, containing
+              formalized solutions to advanced math problems{' '}<br />
+              <strong>
+                <a href="https://dwrensha.github.io/compfiles/problems/Compfiles.Imo1998P3.html" target="_blank" 
+                rel="noopener noreferrer" className="text-black hover:underline">
+                  See the entry here
+                </a>
+              </strong>.{' '}
+              </>),
+              image: "/lean.png",
+            },
+            {
               title: "Brown Opinion Project Website",
               description: (<>Collaborated with a small team of Full Stack at Brown members to create a website for the Brown Opinion Project at Brown. Used Next.JS, Typescript, and Tailwind to implement the Question Submissions page and create a cross-tab data visualization tool (pictured above). <strong><a href="https://www.brownopinionproject.org/" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">View the full website</a></strong>.
               </>),
