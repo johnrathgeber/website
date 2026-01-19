@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div className="flex flex-col items-center min-h-screen px-4 pt-20">
-      {/* Navbar */}
+      {/* navbar */}
       <nav className="bg-cyan-800 dark:bg-gray-800 bg-opacity-75 text-white py-4 fixed top-0 left-0 w-full z-10">
         <div className="max-w-screen-xl mx-auto flex justify-between items-center px-6">
           <div className="text-2xl font-bold">John Rathgeber</div>
@@ -17,14 +17,14 @@ export default function Home() {
       </nav>
 
 
-      {/* Header Section with Name */}
+      {/* header */}
       <header className="text-center py-16">
         <h1 className="text-5xl sm:text-6xl md:text-8xl text-[var(--foreground)]" style={{ fontFamily: 'var(--font-bad-script)' }}>
           John Rathgeber
         </h1>
       </header>
 
-      {/* About Me Section */}
+      {/* about me */}
       <section id="about-me" className="w-full py-16 border-t border-gray-300 scroll-mt-24">
         <h2 className="text-2xl font-semibold text-center mb-8">About Me</h2>
         <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between mx-auto max-w-screen-lg gap-32">
@@ -37,11 +37,11 @@ export default function Home() {
             <p className="text-lg">
               My primary languages are C++ and Python, but I also have extensive experience with languages like Javascript, Typescript, Java, and SQL.
               I specialize in algorithmic problem solving, math-heavy systems, and backend engineering.
-              This summer, I got hands-on experience building backend systems at Electronic Theatre Controls, and I’m currently looking for Summer 2026 software engineering internships where I can continue building impactful projects and growing as an engineer.
+              Last summer, I got hands-on experience building backend systems at Electronic Theatre Controls, and I’m currently looking for Summer 2026 software engineering internships where I can continue building impactful projects and growing as an engineer.
             </p>
             <p className="text-lg">
               When I&apos;m not coding, I&apos;m usually at the piano practicing repertoire or <a href="https://musescore.com/user/76422514" target="_blank" rel="noopener noreferrer" className="underline">composing my own music</a>.
-              This summer, I also accompanied for a voice recital and played keyboard in the Sauk Prairie Theatre Guild&apos;s production of <em>The SpongeBob Musical</em>.
+              Last summer, I also accompanied for a voice recital and played keyboard in the Sauk Prairie Theatre Guild&apos;s production of <em>The SpongeBob Musical</em>.
               My favorite composers are Chopin, Mozart, Beethoven, Bach, and Joplin.
               Outside of music and tech, I enjoy going to the gym, playing tennis or golf, and reading.
             </p>
@@ -50,7 +50,7 @@ export default function Home() {
               Thank you for visiting my website!
             </p>
           </div>
-          {/* Image Section */}
+          {/* images */}
           <div className="md:w-1/2 flex flex-col items-center space-y-8 md:justify-end px-4">
             <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
               <Image 
@@ -104,14 +104,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects Section */}
+      {/* projects */}
       <section id="projects" className="w-full py-16 border-t border-gray-300 scroll-mt-24">
         <h2 className="text-2xl font-semibold text-center mb-8">Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto max-w-screen-lg px-4">
           {[
             {
+              title: "Kinetic Clash",
+              description: (<>A two-player physics combat game with a custom collision engine, 
+              AI opponents, and real-time game mechanic customization. 
+              Built entirely in Python without external physics libraries.
+              This started as a curiosity project to explore physics simulation and 
+              evolved into a playable game with customizable mechanics. {' '}
+              <strong>
+                <a href="https://github.com/johnrathgeber/kinetic-clash" target="_blank" 
+                rel="noopener noreferrer" className="text-black hover:underline">
+                  See the code here
+                </a>
+              </strong>.
+              </>),
+              image: "/kinetic_clash.png",
+            },
+            {
               title: "IMO Problem Formalization",
-              description: (<>Proved and formalized IMO 1998 Problem 3 using the Lean 4 theorem prover.{' '}
+              description: (<>A formalization of IMO 1998 Problem 3 using the Lean 4 theorem prover.{' '}
               This project combines advanced mathematics (number theory) and functional programming
               to create a proof of a beautiful fact in mathematics.{' '}
               <strong>
@@ -121,7 +137,7 @@ export default function Home() {
                 </a>
               </strong>.{' '}<br />
               This project was also merged into the official Compfiles repository, containing
-              formalized solutions to advanced math problems{' '}<br />
+              formalized solutions to advanced math problems.{' '}<br />
               <strong>
                 <a href="https://dwrensha.github.io/compfiles/problems/Compfiles.Imo1998P3.html" target="_blank" 
                 rel="noopener noreferrer" className="text-black hover:underline">
@@ -133,32 +149,57 @@ export default function Home() {
             },
             {
               title: "Brown Opinion Project Website",
-              description: (<>Collaborated with a small team of Full Stack at Brown members to create a website for the Brown Opinion Project at Brown. Used Next.JS, Typescript, and Tailwind to implement the Question Submissions page and create a cross-tab data visualization tool (pictured above). <strong><a href="https://www.brownopinionproject.org/" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">View the full website</a></strong>.
+              description: (<>Collaborated with a small team of Full Stack at Brown members to 
+              create a website for the Brown Opinion Project. Used Next.JS, Typescript, and 
+              Tailwind to implement the Question Submissions page and create a cross-tab data 
+              visualization tool (pictured above).{' '}
+              <strong><a href="https://www.brownopinionproject.org/" target="_blank" 
+              rel="noopener noreferrer" className="text-black hover:underline">
+                View the full website</a></strong>.
               </>),
               image: "/bop.png",
             },
             {
               title: "Tumor Detection",
               description: (
-              <>Led a team in developing a Convolutional Neural Network (CNN) to detect brain tumors in MRI scans, achieving a 90% accuracy rate on publicly available Kaggle datasets. Directed all stages of the project, including data preprocessing, model design, and performance evaluation, utilizing Python along with deep learning frameworks such as Keras and TensorFlow. <strong><a href="/Final_Report.pdf" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">Read the full report</a></strong>.
+              <>A Convolutional Neural Network (CNN) to detect brain tumors in MRI scans.
+              The model achieves 95% accuracy on official Kaggle datasets. 
+              Directed all stages of the project, including data preprocessing, model design, 
+              and performance evaluation. Uses Python along with deep learning frameworks 
+              such as Keras and TensorFlow.{' '}
+              <strong><a href="/Final_Report.pdf" target="_blank" rel="noopener noreferrer" 
+                className="text-black hover:underline">Read the full report</a></strong>.
               </>),
               image: "/tumor_detection_card_cover.png",
             },
             {
               title: "Causality and Mind Lab Website",
-              description: (<>Collaborated with a small team of Full Stack at Brown members to create a website for the Causality and Mind Lab at Brown. Used Next.js, TypeScript, and Tailwind to build the homepage and integrate Firebase for backend functionality. <strong><a href="https://causality-mind-lab.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">View the full website</a></strong>.
+              description: (<>Collaborated with a small team of Full Stack at Brown members 
+              to create a website for the Causality and Mind Lab at Brown. 
+              Used Next.js, TypeScript, and Tailwind to build the homepage and integrate 
+              Firebase for backend functionality.{' '}
+              <strong><a href="https://causality-mind-lab.vercel.app/" target="_blank" 
+                rel="noopener noreferrer" className="text-black hover:underline">
+                  View the full website</a></strong>.
               </>),
               image: "/causality_and_mind_card_cover.png",
             },
             {
               title: "Wisconsin DOT Position Estimation",
-              description: (<>Developed an algorithm that recognizes and maps street signs from a dataset of over 3 million images. This algorithm uses advanced computer vision methods such as monocular depth estimation and YOLO-based sign detection to compute real-world distances using exponential depth fitting and trigonometric projection. <strong><a href="https://github.com/hidabeast/WisDOT_Traffic_Sign_Location" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">See the details</a></strong>.
+              description: (<>An algorithm that recognizes and maps street signs from a dataset 
+              of over 3 million images. This algorithm uses computer vision methods such as 
+              monocular depth estimation and YOLO-based sign detection to compute real-world 
+              distances using exponential depth fitting and trigonometric projection.{' '}
+              <strong><a href="https://github.com/hidabeast/WisDOT_Traffic_Sign_Location" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">See the details</a></strong>.
               </>),
               image: "/wisdot_card_cover.png",
             },
             {
               title: "Caching I/O",
-              description: (<>Built a custom C-based I/O caching library to wrap read, write, and seek operations, reducing system call frequency and cutting disk access latency by 100x–1000x through buffered memory caching. Handled overlapping reads/writes, eviction via LRU, and correctness edge cases to closely match stdio behavior.
+              description: (<>A custom C-based I/O caching library to wrap read, write, 
+              and seek operations, reducing system call frequency and cutting disk access latency 
+              by 100x–1000x through buffered memory caching. It handles overlapping reads/writes, 
+              eviction via LRU, and correctness edge cases to closely match stdio behavior.
               </>),
               image: "/caching_io.png",
             },
@@ -183,10 +224,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact and Resume*/}
+      {/* contact */}
       <section id="resume-contact" className="w-full py-16 border-t border-gray-300 scroll-mt-24">
         <div className="flex justify-between items-start">
-          {/* Contact Information Section */}
           <div className="flex-1 p-4">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">Contact</h2>
             <p className="text-[var(--foreground)] text-lg mb-2">Feel free to reach out!</p>
@@ -209,7 +249,7 @@ export default function Home() {
             </ul>
           </div>
 
-          {/* Resume Section */}
+          {/* resume */}
           <div className="flex-1 p-4">
             <h2 className="text-2xl font-semibold text-white mb-4 flex items-center justify-between">
               <a
