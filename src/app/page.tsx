@@ -38,14 +38,18 @@ export default function Home() {
               My primary languages are C++ and Python, but I also have extensive experience with languages like Javascript, Typescript, Java, and SQL.
               I specialize in algorithmic problem solving, math-heavy systems, and backend engineering.{' '}
               {/* Last summer, I got hands-on experience building backend systems at Electronic Theatre Controls, and I’m currently looking for Summer 2026 software engineering internships where I can continue building impactful projects and growing as an engineer. */}
-              This summer, I'm heading to Amazon Web Services as a Software Development Engineer Intern on the Amazon Quick Agentic AI team.
-              {/* Maybe add something about TAing at some point here? */}
+              This summer, I'm heading to Amazon Web Services as a Software Development Engineer Intern on the <a href="https://aws.amazon.com/quick" target="_blank" rel="noopener noreferrer" className="underline">Amazon Quick</a> Agentic AI team.
+            </p>
+            <p className="text-lg">
+              On campus, I am a teaching assistant (<a href="https://cs22.io" target="_blank" rel="noopener noreferrer" className="underline">CSCI 0220</a>, <a href="https://browncs1260.github.io/" target="_blank" rel="noopener noreferrer" className="underline">CSCI 1260</a>), developer at <Link href="https://fullstackatbrown.com" target="_blank" rel="noopener noreferrer" className="underline">Full Stack at Brown</Link> (<Link href="/fullstack" target="_blank" rel="noopener noreferrer" className="underline">see websites I've helped build</Link>), and a member of Brown's Vietnamese Student Association.
             </p>
             <p className="text-lg">
               When I&apos;m not coding, I&apos;m usually at the piano practicing repertoire or <a href="https://musescore.com/user/76422514" target="_blank" rel="noopener noreferrer" className="underline">composing my own music</a>.
-              Last summer, I also accompanied for a voice recital and played keyboard in the Sauk Prairie Theatre Guild&apos;s production of <em>The SpongeBob Musical</em>.
-              My favorite composers are Chopin, Mozart, Beethoven, Bach, and Joplin.
-              Outside of music and tech, I enjoy going to the gym, playing tennis or golf, and reading.
+              I also do a lot of pit orchestra work - recently, I played Keyboard 1 in the Sauk Prairie Theatre Guild&apos;s production of <em>The SpongeBob Musical</em>, and Keyboard 2 in a Brown production of <em>Carrie: The Musical</em>.
+              My favorite composers are Bach, Chopin, Beethoven, Mozart, and Joplin.
+            </p>
+            <p className="text-lg">
+              Outside of music and tech, I enjoy going to the gym, playing tennis or golf (or any sport), going out to eat, and reading.
             </p>
             <p className="text-lg">
               If you&apos;d like to connect, collaborate, or chat, please don&apos;t hesitate to <Link href="#resume-contact" className="underline">reach out</Link>.
@@ -161,18 +165,6 @@ export default function Home() {
               image: "/lean.png",
               githubUrl: "https://github.com/johnrathgeber/imo-problem-formalization",
             },
-            // {
-            //   title: "Brown Opinion Project Website",
-            //   description: (<>Collaborated with a small team of Full Stack at Brown members to 
-            //   create a website for the Brown Opinion Project. Used Next.JS, Typescript, and 
-            //   Tailwind to implement the Question Submissions page and create a cross-tab data 
-            //   visualization tool (pictured above).{' '}
-            //   <strong><a href="https://www.brownopinionproject.org/" target="_blank" 
-            //   rel="noopener noreferrer" className="text-black hover:underline">
-            //     View the full website</a></strong>.
-            //   </>),
-            //   image: "/bop.png",
-            // },
             {
               title: "Tumor Detection",
               description: (
@@ -187,18 +179,6 @@ export default function Home() {
               image: "/tumor_detection_card_cover.png",
               githubUrl: "https://github.com/johnrathgeber/tumor_detection",
             },
-            // {
-            //   title: "Causality and Mind Lab Website",
-            //   description: (<>Collaborated with a small team of Full Stack at Brown members 
-            //   to create a website for the Causality and Mind Lab at Brown. 
-            //   Used Next.js, TypeScript, and Tailwind to build the homepage and integrate 
-            //   Firebase for backend functionality.{' '}
-            //   <strong><a href="https://causality-mind-lab.vercel.app/" target="_blank" 
-            //     rel="noopener noreferrer" className="text-black hover:underline">
-            //       View the full website</a></strong>.
-            //   </>),
-            //   image: "/causality_and_mind_card_cover.png",
-            // },
             {
               title: "Wisconsin DOT Position Estimation",
               description: (<>An algorithm that recognizes and maps street signs from a dataset 
