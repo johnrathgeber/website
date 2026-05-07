@@ -36,8 +36,10 @@ export default function Home() {
             </p>
             <p className="text-lg">
               My primary languages are C++ and Python, but I also have extensive experience with languages like Javascript, Typescript, Java, and SQL.
-              I specialize in algorithmic problem solving, math-heavy systems, and backend engineering.
-              Last summer, I got hands-on experience building backend systems at Electronic Theatre Controls, and I’m currently looking for Summer 2026 software engineering internships where I can continue building impactful projects and growing as an engineer.
+              I specialize in algorithmic problem solving, math-heavy systems, and backend engineering.{' '}
+              {/* Last summer, I got hands-on experience building backend systems at Electronic Theatre Controls, and I’m currently looking for Summer 2026 software engineering internships where I can continue building impactful projects and growing as an engineer. */}
+              This summer, I'm heading to Amazon Web Services as a Software Development Engineer Intern on the Amazon Quick Agentic AI team.
+              {/* Maybe add something about TAing at some point here? */}
             </p>
             <p className="text-lg">
               When I&apos;m not coding, I&apos;m usually at the piano practicing repertoire or <a href="https://musescore.com/user/76422514" target="_blank" rel="noopener noreferrer" className="underline">composing my own music</a>.
@@ -110,33 +112,44 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto max-w-screen-lg px-4">
           {[
             {
+              title: "Distributed Search Engine",
+              description: (<>A search engine for the Linux Kernel Mailing List, built entirely from scratch and deployed on AWS using Node.js and    
+  Bash. It crawls and indexes 96K pages across 3 distributed nodes using a custom MapReduce pipeline, storing results in
+   a 3.1GB distributed inverted index. Keyword searches are stemmed, broken into n-grams, and answered in under 2ms at    
+  around 500 queries per second. {' '}
+              <strong>
+                <a href="/Distributed_Poster.pdf" target="_blank"
+                rel="noopener noreferrer" className="text-black hover:underline">
+                  Read the full report here
+                </a>
+              </strong>.
+              </>),
+              imageComponent: (
+                <div className="w-full h-80 flex items-center justify-center bg-white gap-3 px-4">
+                  <img src="/google-logo.png" alt="Google" className="h-36 w-2/5 object-contain" />
+                  <div className="w-px h-40 bg-gray-300 shrink-0" />
+                  <img src="/aws-ec2-logo.png" alt="AWS EC2" className="h-36 w-2/5 object-contain" />
+                </div>
+              ),
+              githubUrl: "https://github.com/johnrathgeber/distributed-stack-indexer",
+            },
+            {
               title: "Kinetic Clash",
               description: (<>A two-player physics combat game with a custom collision engine, 
               AI opponents, and real-time game mechanic customization. 
               Built entirely in Python without external physics libraries.
               This started as a curiosity project to explore physics simulation and 
-              evolved into a playable game with customizable mechanics. {' '}
-              <strong>
-                <a href="https://github.com/johnrathgeber/kinetic-clash" target="_blank" 
-                rel="noopener noreferrer" className="text-black hover:underline">
-                  See the code here
-                </a>
-              </strong>.
+              evolved into a playable game with customizable mechanics.
               </>),
               image: "/kinetic_clash.png",
+              githubUrl: "https://github.com/johnrathgeber/kinetic-clash",
             },
             {
               title: "IMO Problem Formalization",
               description: (<>A formalization of IMO 1998 Problem 3 using the Lean 4 theorem prover.{' '}
               This project combines advanced mathematics (number theory) and functional programming
-              to create a proof of a beautiful fact in mathematics.{' '}
-              <strong>
-                <a href="https://github.com/johnrathgeber/imo-problem-formalization" target="_blank" 
-                rel="noopener noreferrer" className="text-black hover:underline">
-                  See the code here
-                </a>
-              </strong>.{' '}<br />
-              This project was also merged into the official Compfiles repository, containing
+              to create a proof of a beautiful mathematical fact.{' '}
+              This project was merged into the official Compfiles repository, containing
               formalized solutions to advanced math problems.{' '}<br />
               <strong>
                 <a href="https://dwrensha.github.io/compfiles/problems/Compfiles.Imo1998P3.html" target="_blank" 
@@ -146,19 +159,20 @@ export default function Home() {
               </strong>.{' '}
               </>),
               image: "/lean.png",
+              githubUrl: "https://github.com/johnrathgeber/imo-problem-formalization",
             },
-            {
-              title: "Brown Opinion Project Website",
-              description: (<>Collaborated with a small team of Full Stack at Brown members to 
-              create a website for the Brown Opinion Project. Used Next.JS, Typescript, and 
-              Tailwind to implement the Question Submissions page and create a cross-tab data 
-              visualization tool (pictured above).{' '}
-              <strong><a href="https://www.brownopinionproject.org/" target="_blank" 
-              rel="noopener noreferrer" className="text-black hover:underline">
-                View the full website</a></strong>.
-              </>),
-              image: "/bop.png",
-            },
+            // {
+            //   title: "Brown Opinion Project Website",
+            //   description: (<>Collaborated with a small team of Full Stack at Brown members to 
+            //   create a website for the Brown Opinion Project. Used Next.JS, Typescript, and 
+            //   Tailwind to implement the Question Submissions page and create a cross-tab data 
+            //   visualization tool (pictured above).{' '}
+            //   <strong><a href="https://www.brownopinionproject.org/" target="_blank" 
+            //   rel="noopener noreferrer" className="text-black hover:underline">
+            //     View the full website</a></strong>.
+            //   </>),
+            //   image: "/bop.png",
+            // },
             {
               title: "Tumor Detection",
               description: (
@@ -171,28 +185,29 @@ export default function Home() {
                 className="text-black hover:underline">Read the full report</a></strong>.
               </>),
               image: "/tumor_detection_card_cover.png",
+              githubUrl: "https://github.com/johnrathgeber/tumor_detection",
             },
-            {
-              title: "Causality and Mind Lab Website",
-              description: (<>Collaborated with a small team of Full Stack at Brown members 
-              to create a website for the Causality and Mind Lab at Brown. 
-              Used Next.js, TypeScript, and Tailwind to build the homepage and integrate 
-              Firebase for backend functionality.{' '}
-              <strong><a href="https://causality-mind-lab.vercel.app/" target="_blank" 
-                rel="noopener noreferrer" className="text-black hover:underline">
-                  View the full website</a></strong>.
-              </>),
-              image: "/causality_and_mind_card_cover.png",
-            },
+            // {
+            //   title: "Causality and Mind Lab Website",
+            //   description: (<>Collaborated with a small team of Full Stack at Brown members 
+            //   to create a website for the Causality and Mind Lab at Brown. 
+            //   Used Next.js, TypeScript, and Tailwind to build the homepage and integrate 
+            //   Firebase for backend functionality.{' '}
+            //   <strong><a href="https://causality-mind-lab.vercel.app/" target="_blank" 
+            //     rel="noopener noreferrer" className="text-black hover:underline">
+            //       View the full website</a></strong>.
+            //   </>),
+            //   image: "/causality_and_mind_card_cover.png",
+            // },
             {
               title: "Wisconsin DOT Position Estimation",
               description: (<>An algorithm that recognizes and maps street signs from a dataset 
               of over 3 million images. This algorithm uses computer vision methods such as 
               monocular depth estimation and YOLO-based sign detection to compute real-world 
-              distances using exponential depth fitting and trigonometric projection.{' '}
-              <strong><a href="https://github.com/hidabeast/WisDOT_Traffic_Sign_Location" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">See the details</a></strong>.
+              distances using exponential depth fitting and trigonometric projection.
               </>),
               image: "/wisdot_card_cover.png",
+              githubUrl: "https://github.com/hidabeast/WisDOT_Traffic_Sign_Location",
             },
             {
               title: "Caching I/O",
@@ -204,21 +219,36 @@ export default function Home() {
               image: "/caching_io.png",
             },
           ].map((project, index) => (
-            <div 
-              key={index} 
-              className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-xl transform hover:scale-105 transition-transform duration-300"
+            <div
+              key={index}
+              className="relative bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-xl transform hover:scale-105 transition-transform duration-300"
             >
-              <Image  
-                src={project.image} 
-                alt={project.title}
-                width={400}
-                height={320}
-                className="w-full h-80 object-contain"
-              />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold mb-2 text-black">{project.title}</h3>
+              {'imageComponent' in project ? project.imageComponent : (
+                <Image
+                  src={(project as {image: string}).image}
+                  alt={project.title}
+                  width={400}
+                  height={320}
+                  className="w-full h-80 object-contain"
+                />
+              )}
+              <div className={'githubUrl' in project ? "p-4 pb-14" : "p-4"}>
+                <h3 className="text-lg font-semibold mb-2 text-black">
+                  {'githubUrl' in project
+                    ? <a href={(project as {githubUrl: string}).githubUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">{project.title}</a>
+                    : project.title}
+                </h3>
                 <p className="text-gray-700">{project.description}</p>
               </div>
+              {'githubUrl' in project && (
+                <div className="absolute bottom-4 left-4">
+                  <a href={(project as {githubUrl: string}).githubUrl} target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                    <svg viewBox="0 0 24 24" className="w-8 h-8 text-black hover:text-gray-600 transition-colors" fill="currentColor">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                  </a>
+                </div>
+              )}
             </div>
           ))}
         </div>
