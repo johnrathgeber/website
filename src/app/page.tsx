@@ -38,7 +38,7 @@ export default function Home() {
               My primary languages are C++ and Python, but I also have extensive experience with languages like Javascript, Typescript, Java, and SQL.
               I specialize in algorithmic problem solving, math-heavy systems, and backend engineering.{' '}
               {/* Last summer, I got hands-on experience building backend systems at Electronic Theatre Controls, and I’m currently looking for Summer 2026 software engineering internships where I can continue building impactful projects and growing as an engineer. */}
-              This summer, I'm heading to Amazon Web Services as a Software Development Engineer Intern on the <a href="https://aws.amazon.com/quick" target="_blank" rel="noopener noreferrer" className="underline">Amazon Quick</a> Agentic AI team.
+              This summer, I'm at Amazon Web Services as a Software Development Engineer Intern on the <a href="https://aws.amazon.com/quick" target="_blank" rel="noopener noreferrer" className="underline">Amazon Quick</a> Agentic AI team.
             </p>
             <p className="text-lg">
               On campus, I am a teaching assistant (<a href="https://cs22.io" target="_blank" rel="noopener noreferrer" className="underline">CSCI 0220</a>, <a href="https://browncs1260.github.io/" target="_blank" rel="noopener noreferrer" className="underline">CSCI 1260</a>), developer at <Link href="https://fullstackatbrown.com" target="_blank" rel="noopener noreferrer" className="underline">Full Stack at Brown</Link> (<Link href="/fullstack" target="_blank" rel="noopener noreferrer" className="underline">see websites I've helped build</Link>), and a member of Brown's Vietnamese Student Association.
