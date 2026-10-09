@@ -63,8 +63,8 @@ export default function Home() {
           <div className="md:w-1/2 flex flex-col items-center space-y-8 md:justify-end px-4">
             <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
               <Image 
-                src="/orwig.png" 
-                alt="me in front of Orwig" 
+                src="/front_shot.jpg" 
+                alt="me in seattle"
                 width={320}
                 height={320}
                 className="w-64 h-64 md:w-80 md:h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
@@ -95,8 +95,8 @@ export default function Home() {
             </div>
             <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
               <Image 
-                src="/new_york.jpg" 
-                alt="me doing a funny pose"
+                src="/orwig.png" 
+                alt="me in front of Orwig" 
                 width={320}
                 height={320}
                 className="w-64 h-64 md:w-80 md:h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
@@ -141,17 +141,6 @@ export default function Home() {
               githubUrl: "https://github.com/johnrathgeber/distributed-stack-indexer",
             },
             {
-              title: "Kinetic Clash",
-              description: (<>A two-player physics combat game with a custom collision engine, 
-              AI opponents, and real-time game mechanic customization. 
-              Built entirely in Python without external physics libraries.
-              This started as a curiosity project to explore physics simulation and 
-              evolved into a playable game with customizable mechanics.
-              </>),
-              image: "/kinetic_clash.png",
-              githubUrl: "https://github.com/johnrathgeber/kinetic-clash",
-            },
-            {
               title: "IMO Problem Formalization",
               description: (<>A formalization of IMO 1998 Problem 3 using the Lean 4 theorem prover.{' '}
               This project combines advanced mathematics (number theory) and functional programming
@@ -181,6 +170,17 @@ export default function Home() {
               </>),
               image: "/tumor_detection_card_cover.png",
               githubUrl: "https://github.com/johnrathgeber/tumor_detection",
+            },
+            {
+              title: "Kinetic Clash",
+              description: (<>A two-player physics combat game with a custom collision engine, 
+              AI opponents, and real-time game mechanic customization. 
+              Built entirely in Python without external physics libraries.
+              This started as a curiosity project to explore physics simulation and 
+              evolved into a playable game with customizable mechanics.
+              </>),
+              image: "/kinetic_clash.png",
+              githubUrl: "https://github.com/johnrathgeber/kinetic-clash",
             },
             {
               title: "Wisconsin DOT Position Estimation",
