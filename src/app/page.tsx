@@ -32,22 +32,24 @@ export default function Home() {
           <div className="md:w-1/2 text-center md:text-left px-4 space-y-4 md:pr-8">
             <p className="text-lg mb-4">
               Hi! I&apos;m John, a junior at Brown University, originally from Madison, Wisconsin, pursuing a double concentration in Mathematics-Computer Science and Music.
-              I&apos;m passionate about how logic, creativity, and innovation come together to solve problems in Computer Science.
+              I&apos;m interested in how logic, creativity, and innovation come together to solve problems in Computer Science.
             </p>
             <p className="text-lg">
               {/* My primary languages are C++ and Python, but I also have extensive experience with languages like Javascript, Typescript, Java, and SQL. */}
-              I specialize in distributed systems, artificial intelligence, and backend engineering, and the languages I'm most familiar with are Python and C++.{' '}
+              {/* I specialize in distributed systems, artificial intelligence, and backend engineering, and the languages I'm most familiar with are Python and C++.{' '} */}
+              I specialize in systems, artificial intelligence, and backend engineering.{' '}
               {/* Last summer, I got hands-on experience building backend systems at Electronic Theatre Controls, and I’m currently looking for Summer 2026 software engineering internships where I can continue building impactful projects and growing as an engineer. */}
               {/* This summer, I'm at Amazon Web Services as a Software Development Engineer Intern on the <a href="https://aws.amazon.com/quick" target="_blank" rel="noopener noreferrer" className="underline">Amazon Quick</a> Agentic AI team. */}
               Last summer, I was at Amazon Web Services as an SDE Intern on the <a href="https://aws.amazon.com/quick" target="_blank" rel="noopener noreferrer" className="underline">Amazon Quick</a> Agentic AI team, and I'm currently looking for 2027 early career roles in Software Engineering!
             </p>
             <p className="text-lg">
-              On campus, I am a teaching assistant for Compilers (<a href="https://cs22.io" target="_blank" rel="noopener noreferrer" className="underline">CSCI 0220</a>, <a href="https://browncs1260.github.io/" target="_blank" rel="noopener noreferrer" className="underline">CSCI 1260</a>), developer at <Link href="https://fullstackatbrown.com" target="_blank" rel="noopener noreferrer" className="underline">Full Stack at Brown</Link> (<Link href="/fullstack" target="_blank" rel="noopener noreferrer" className="underline">see websites I've helped build</Link>), and a member of Brown's Vietnamese Student Association.
+              On campus, I'm a teaching assistant for Compilers (<a href="https://cs22.io" target="_blank" rel="noopener noreferrer" className="underline">CSCI 0220</a>, <a href="https://browncs1260.github.io/" target="_blank" rel="noopener noreferrer" className="underline">CSCI 1260</a>), developer at <Link href="https://fullstackatbrown.com" target="_blank" rel="noopener noreferrer" className="underline">Full Stack at Brown</Link> (<Link href="/fullstack" target="_blank" rel="noopener noreferrer" className="underline">see websites I've helped build</Link>), and a member of Brown's Vietnamese Student Association.
             </p>
             <p className="text-lg">
-              When I&apos;m not coding, I&apos;m usually at the piano practicing repertoire or <a href="https://musescore.com/user/76422514" target="_blank" rel="noopener noreferrer" className="underline">composing my own music</a>.
-              I also do a lot of pit orchestra work - recently, I played Keyboard 1 in the Sauk Prairie Theatre Guild&apos;s production of <em>The SpongeBob Musical</em>, and Keyboard 2 in a Brown production of <em>Carrie: The Musical</em>.
-              My favorite composers are Bach, Chopin, Beethoven, Mozart, and Joplin.
+              When I'm not coding, I&apos;m usually at the piano playing solo repertoire, chamber music, musical theatre, or <a href="https://musescore.com/user/76422514" target="_blank" rel="noopener noreferrer" className="underline">composing my own music</a>.{' '}
+              {/* I also do a lot of pit orchestra work - recently, I played Keyboard 1 in the Sauk Prairie Theatre Guild&apos;s production of <em>The SpongeBob Musical</em>, and Keyboard 2 in a Brown production of <em>Carrie: The Musical</em>. */}
+              My favorite composers are Bach, Chopin, Beethoven, Mozart, and Joplin.{' '}
+              Of course, I love to listen to music as well - mostly rock (ELO, Pink Floyd, Genesis, King Crimson, Rush, Steely Dan, etc)!
             </p>
             <p className="text-lg">
               Outside of music and tech, I enjoy going to the gym, playing tennis or golf (or any sport), going out to eat, hiking, and reading.
