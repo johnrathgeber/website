@@ -266,7 +266,7 @@ export default function Home() {
           <div className="flex-1 p-4">
             <h2 className="text-2xl font-semibold text-white mb-4 flex items-center justify-between">
               <a
-                href="/John_Rathgeber_Resume.pdf"
+                href="/John_Rathgeber_Resume_No_Phone.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[var(--foreground)] hover:underline"
@@ -274,7 +274,7 @@ export default function Home() {
                 Resume
               </a>
               <a
-                href="/John_Rathgeber_Resume.pdf"
+                href="/John_Rathgeber_Resume_No_Phone.pdf"
                 download
                 className="text-gray-400 hover:text-cyan-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:ring-offset-2 focus:ring-offset-gray-900 rounded"
                 aria-label="Download resume as PDF"
@@ -289,7 +289,7 @@ export default function Home() {
               <div className="hidden md:block flex justify-center">
                 <div className="border border-gray-300 shadow-lg overflow-hidden" style={{width: 'fit-content', maxWidth: '100%'}}>
                   <iframe 
-                    src="/John_Rathgeber_Resume.pdf#toolbar=0&view=FitH"
+                    src="/John_Rathgeber_Resume_No_Phone.pdf#toolbar=0&view=FitH"
                     className="block"
                     title="Resume"
                     style={{
@@ -305,7 +305,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="p-4 text-center text-gray-500 md:hidden">
-                <p>Resume preview optimized for desktop. <a href="/John_Rathgeber_Resume.pdf" target="_blank" rel="noopener noreferrer" className="underline">Open or download the PDF</a>.</p>
+                <p>Resume preview optimized for desktop. <a href="/John_Rathgeber_Resume_No_Phone.pdf" target="_blank" rel="noopener noreferrer" className="underline">Open or download the PDF</a>.</p>
               </div>
             </div>
           </div>
