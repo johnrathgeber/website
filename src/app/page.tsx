@@ -31,7 +31,7 @@ export default function Home() {
           {/* Text Section */}
           <div className="md:w-1/2 text-center md:text-left px-4 space-y-4 md:pr-8">
             <p className="text-lg mb-4">
-              Hi! I&apos;m John, a junior at Brown University, originally from Madison, Wisconsin, pursuing a double concentration in Mathematics-Computer Science and Music.
+              Hi! I&apos;m John, a senior at Brown University, originally from Madison, Wisconsin, pursuing a double concentration in Mathematics-Computer Science and Music.
               I&apos;m interested in how logic, creativity, and innovation come together to solve problems in Computer Science.
             </p>
             <p className="text-lg">
@@ -95,8 +95,8 @@ export default function Home() {
             </div>
             <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
               <Image 
-                src="/orwig.png" 
-                alt="me in front of Orwig" 
+                src="/mt_rainier.png" 
+                alt="me in front of Mt. Rainier" 
                 width={320}
                 height={320}
                 className="w-64 h-64 md:w-80 md:h-80 object-cover shadow-lg border border-gray-300 rounded-3xl"
